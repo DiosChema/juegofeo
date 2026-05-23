@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c14iolfm05p26"]
+
+[ext_resource type="Script" uid="uid://b5blpd4hm1oyg" path="res://Scenes/Tile.cs" id="1_iof5j"]
+[ext_resource type="Texture2D" uid="uid://dgvcxauh1o2s4" path="res://icon.svg" id="1_xsjyq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rvq8p"]
+size = Vector2(32, 32)
+
+[node name="Tile" type="Area2D" unique_id=1011742265]
+script = ExtResource("1_iof5j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1774453487]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_xsjyq")
+
+[node name="Portrait" type="TextureRect" parent="." unique_id=1292865666]
+custom_minimum_size = Vector2(48, 48)
+offset_left = -24.0
+offset_top = -28.0
+offset_right = 24.0
+offset_bottom = 20.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1862560680]
+shape = SubResource("RectangleShape2D_rvq8p")
+
+[node name="Label" type="Label" parent="." unique_id=2025034304]
+offset_right = 40.0
+offset_bottom = 23.0
