@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bvne1d00eydpp"]
+
+[ext_resource type="Script" uid="uid://b6u20c8jcrj43" path="res://Scripts/TopBar.cs" id="1_tx6gm"]
+[ext_resource type="PackedScene" uid="uid://0m6wtiqoeut4" path="res://Scenes/UI/ResourceDisplay.tscn" id="2_brpmj"]
+[ext_resource type="Texture2D" uid="uid://dmsm15bomvr0b" path="res://Assets/Resources/gold.png" id="3_bfw2b"]
+[ext_resource type="Texture2D" uid="uid://d3v02hub2rmdq" path="res://Assets/Resources/meat.png" id="4_5bdx3"]
+[ext_resource type="Texture2D" uid="uid://vh8rr8x22iwk" path="res://Assets/Resources/vegetables.png" id="5_4714c"]
+[ext_resource type="Texture2D" uid="uid://brp46nnggjxqe" path="res://Assets/Resources/wood.png" id="6_g1p64"]
+[ext_resource type="Texture2D" uid="uid://co3ae3kf3pfvr" path="res://Assets/Resources/stone.png" id="7_qudgc"]
+[ext_resource type="Texture2D" uid="uid://bnv860ujlkllm" path="res://Assets/Resources/population.png" id="8_g0m5e"]
+
+[node name="TopBar" type="PanelContainer" unique_id=575981212]
+custom_minimum_size = Vector2(0, 40)
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 544.0
+grow_horizontal = 2
+size_flags_vertical = 0
+script = ExtResource("1_tx6gm")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=787589322]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1820278614]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1106941023]
+custom_minimum_size = Vector2(15, 0)
+layout_mode = 2
+
+[node name="Gold" parent="MarginContainer/HBoxContainer" unique_id=1006640482 instance=ExtResource("2_brpmj")]
+layout_mode = 2
+Icon = ExtResource("3_bfw2b")
+
+[node name="Meat" parent="MarginContainer/HBoxContainer" unique_id=2035815569 instance=ExtResource("2_brpmj")]
+layout_mode = 2
+Icon = ExtResource("4_5bdx3")
+
+[node name="Vegetables" parent="MarginContainer/HBoxContainer" unique_id=288497202 instance=ExtResource("2_brpmj")]
+layout_mode = 2
+Icon = ExtResource("5_4714c")
+
+[node name="Wood" parent="MarginContainer/HBoxContainer" unique_id=1163156355 instance=ExtResource("2_brpmj")]
+layout_mode = 2
+Icon = ExtResource("6_g1p64")
+
+[node name="Stone" parent="MarginContainer/HBoxContainer" unique_id=2097070488 instance=ExtResource("2_brpmj")]
+layout_mode = 2
+Icon = ExtResource("7_qudgc")
+
+[node name="Population" parent="MarginContainer/HBoxContainer" unique_id=321399340 instance=ExtResource("2_brpmj")]
+layout_mode = 2
+Icon = ExtResource("8_g0m5e")

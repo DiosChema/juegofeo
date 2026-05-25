@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://0m6wtiqoeut4"]
+
+[ext_resource type="Script" uid="uid://bs6of2yirhtnv" path="res://Scripts/ResourceDisplay.cs" id="1_76s73"]
+
+[node name="ResourceDisplay" type="HBoxContainer" unique_id=1723463177]
+custom_minimum_size = Vector2(0, 40)
+offset_right = 206.0
+offset_bottom = 529.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+alignment = 1
+script = ExtResource("1_76s73")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=1661490670]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Amount" type="RichTextLabel" parent="." unique_id=276372698]
+layout_mode = 2
+bbcode_enabled = true
+text = "120[green](+15)[/green]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cclvqfp2csgl1"]
 
+[ext_resource type="PackedScene" uid="uid://bvne1d00eydpp" path="res://Scenes/UI/TopBar.tscn" id="1_b2bpf"]
 [ext_resource type="Script" uid="uid://cghwq2ddbi6e6" path="res://Scripts/GridManager.cs" id="1_gl6un"]
 [ext_resource type="PackedScene" uid="uid://c14iolfm05p26" path="res://Scenes/Tile.tscn" id="2_j5yw3"]
 [ext_resource type="Script" uid="uid://b428csqb47t5d" path="res://Scripts/GameManager.cs" id="3_j5yw3"]
@@ -18,6 +19,13 @@ expand_margin_bottom = 20.0
 [node name="Game" type="Node2D" unique_id=849174741]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=860765540]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1569946791]
+
+[node name="TopBar" parent="CanvasLayer" unique_id=109125987 instance=ExtResource("1_b2bpf")]
+custom_minimum_size = Vector2(40, 0)
+offset_left = -266.5
+offset_right = 1129.5
 
 [node name="GridManager" type="Node2D" parent="." unique_id=268271878]
 script = ExtResource("1_gl6un")

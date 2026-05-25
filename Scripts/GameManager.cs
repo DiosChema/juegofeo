@@ -27,8 +27,9 @@ public partial class GameManager : Node
 	private Label turnLabel;
 	private Button endTurnButton;
 	
-	public List<RefugeeOffer>
-		CurrentOffers = [];
+	public List<RefugeeOffer> CurrentOffers = [];
+		
+	private TopBar _topBar;
 		
 	public bool CanBuildThisTurn=false;		
 
@@ -75,6 +76,24 @@ public partial class GameManager : Node
 
 		endTurnButton.Pressed +=
 			EndTurn;
+			
+		_topBar = GetNode<TopBar>("/root/Game/CanvasLayer/TopBar");
+		
+		
+		_topBar.UpdateResources(
+			120,
+			15,
+			10,
+			5,
+			10,
+			5,
+			10,
+			5,
+			10,
+			5,
+			40,
+			4
+		);
 	}
 
 	private void EndTurn()
