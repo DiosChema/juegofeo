@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://0m6wtiqoeut4"]
 
-[ext_resource type="Script" uid="uid://bs6of2yirhtnv" path="res://Scripts/ResourceDisplay.cs" id="1_76s73"]
+[ext_resource type="Script" uid="uid://bs6of2yirhtnv" path="res://UI/TopBar/ResourceDisplay.cs" id="1_76s73"]
 
 [node name="ResourceDisplay" type="HBoxContainer" unique_id=1723463177]
 custom_minimum_size = Vector2(0, 40)

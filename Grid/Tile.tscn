@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c14iolfm05p26"]
 
-[ext_resource type="Script" uid="uid://b5blpd4hm1oyg" path="res://Scenes/Tile.cs" id="1_iof5j"]
+[ext_resource type="Script" uid="uid://b5blpd4hm1oyg" path="res://Grid/Tile.cs" id="1_iof5j"]
 [ext_resource type="Texture2D" uid="uid://dgvcxauh1o2s4" path="res://icon.svg" id="1_xsjyq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rvq8p"]

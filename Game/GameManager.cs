@@ -79,7 +79,6 @@ public partial class GameManager : Node
 			
 		_topBar = GetNode<TopBar>("/root/Game/CanvasLayer/TopBar");
 		
-		
 		_topBar.UpdateResources(
 			120,
 			15,

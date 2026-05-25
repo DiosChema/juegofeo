@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class TopBar : PanelContainer
+public partial class TopBar : Control
 {
 	private ResourceDisplay _gold;
 	private ResourceDisplay _meat;
@@ -29,19 +29,6 @@ public partial class TopBar : PanelContainer
 
 		_population = GetNode<ResourceDisplay>(
 			"MarginContainer/HBoxContainer/Population");
-
-
-		_gold.SetValues(120,15);
-
-		_meat.SetValues(10,5);
-
-		_vegetables.SetValues(20,10);
-
-		_wood.SetValues(2,5);
-
-		_stone.SetValues(3,10);
-
-		_population.SetValues(40,5);
 	}
 	
 	public void UpdateResources(

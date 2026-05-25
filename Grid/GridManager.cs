@@ -85,10 +85,7 @@ public partial class GridManager : Node2D
 	private void OnTileClicked(Tile tile)
 	{
 		// Ignorar centro urbano
-		if(
-			tile.Data.Type==
-			TileType.Center
-		)
+		if( tile.Data.Type== TileType.Center)
 			return;
 
 		// Crear District si no existe
@@ -99,23 +96,13 @@ public partial class GridManager : Node2D
 		}
 
 		// Ya ocupado
-		if(
-			tile.Data.District.Race
-			!=null
-		)
+		if(tile.Data.District.Race !=null )
 			return;
 
 		// Solo permitir construir conectado
-		if(
-			!HasAdjacentDistrict(
-				tile
-			)
-		)
+		if(!HasAdjacentDistrict(tile))
 		{
-			GD.Print(
-				"No conectado"
-			);
-
+			GD.Print("No conectado");
 			return;
 		}
 
